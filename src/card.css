@@ -1,79 +1,68 @@
-
-  
-  .card{
-    margin: 1.2%;
+.card {
+  margin: 1.2%;
   padding: 1%;
-    background-color: #ffffff;
-    width: 30.5%;
-   
-    box-shadow: 0px, 13px, 10px, -7px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  width: 30.5%;
+
+  box-shadow: 0px, 13px, 10px, -7px rgba(0, 0, 0, 0.1);
   float: left;
+
+  height: fit-content;
+}
+.card:hover {
+  box-shadow: 0px, 30px, 18px, -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+  z-index: -255;
+}
+
+.card__category {
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  font-size: 12px;
+
+  font-weight: 200;
+  color: #868686;
+  background-color: #ffffff;
+}
+
+button {
+  padding: 5px 8px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+
+  font-weight: 200;
+  width: 100%;
+  background-color: #01038a;
+
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .card {
+    margin: 1.2%;
+    padding: 1%;
+    background-color: #ffffff;
+    width: 100%;
+
+    box-shadow: 0px, 13px, 10px, -7px rgba(0, 0, 0, 0.1);
+    float: none;
 
     height: fit-content;
   }
-  .card:hover{
-    box-shadow: 0px, 30px, 18px, -8px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05,1.05);
-    z-index: -255;
-  }
-  
 
-  .card__category{
-    font-family: "Raleway", sans-serif;
-    text-transform:capitalize;
-    font-size: 12px;
-   
-    font-weight: 200;
-    color: #868686;
-    background-color: #ffffff;
-  
+  .card__category {
+    font-size: 18px;
   }
- 
-  button{
-    padding: 5px 8px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    color:#fff;
-   
-    font-weight: 200;
-   width: 100%;
-    background-color: #01038a;
-  
-    
-    cursor: pointer;
-  }
-  @media screen and (max-width: 700px) {
-    .card{
-      margin: 1.2%;
-    padding: 1%;
-      background-color: #ffffff;
-      width: 100%;
-     
-      box-shadow: 0px, 13px, 10px, -7px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 400px) {
+  .card {
     float: none;
-  
-      height: fit-content;
-    }
-  
-  
-    .card__category{
-      font-size: 18px;
-    
-    }
-   
-   
+
+    height: fit-content;
   }
-  @media screen and (max-width: 400px) {
-    .card{
-    float: none;
-  
-      height: fit-content;
-    }
-    
-    .card__category{
-   
-      font-size: 18px;
-     
-    }
+
+  .card__category {
+    font-size: 18px;
   }
+}
